@@ -4,12 +4,12 @@ import About from './pages/About'
 import Singin from './pages/Singin'
 import Dashboard from './pages/Dashboard'
 import Singup from './Singup'
-
-
+import Header from './component/Header'
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Header/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
