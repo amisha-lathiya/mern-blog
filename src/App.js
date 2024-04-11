@@ -3,8 +3,11 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Singin from './pages/Singin'
 import Dashboard from './pages/Dashboard'
-import Singup from './Singup'
 import Header from './component/Header'
+import FooterPage from './component/FooterPage'
+import Singup from './pages/Singup'
+
+
 
 const App = () => {
   return (
@@ -13,10 +16,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/sing-in" element={<Singin />}></Route>
-        <Route path="/sing-up" element={<Singup />}></Route>
+        <Route path="/singin" element={<Singin />}></Route>
+        <Route path="/singup" element={<Singup />}></Route>
         <Route path="/DashBoard" element={<Dashboard />}></Route>
       </Routes>
+      <FooterPage/>
     </BrowserRouter>
   )
 }

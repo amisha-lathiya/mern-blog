@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <Navbar className="border-b-2 shadow-sm">
         <Link to="/" className=" whitespace-nowrap text-sm sm:text-xl ">
-          {" "}
+         
           <span className="bg-gradient-to-r from-indigo-500 via-purple-700 to-pink-500 p-2 rounded-lg text-white">
             Sahand's
           </span>
@@ -32,8 +32,8 @@ const Header = () => {
           <Button className="w-12 h-10 hidden sm:inline" color="gray">
             <FaMoon />
           </Button>
-          <Link to="/sing-in" className="">
-            <Button className="bg-gradient-to-r from-purple-400  to-blue-500 " outline>
+          <Link to="/singup" className="">
+            <Button className="bg-gradient-to-r from-purple-400  to-blue-500  focus:ring-0">
               Sing In
             </Button>
           </Link>
