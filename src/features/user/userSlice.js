@@ -35,7 +35,7 @@ export const userSlice=createSlice({
 
         builder.addCase(SingUser.fulfilled,(state,action)=>{
             console.log(action.payload);
-            state.currentuser=action.payload;
+            state.currentuser = [...state.currentuser, action.payload]; 
         })
     }
     
