@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />}></Route>
         <Route path="/singin" element={<Singin />}></Route>
         <Route path="/singup" element={<Singup />}></Route>
-        <Route path="/DashBoard" element={<Dashboard />}></Route>
+        <Route path="/DashBoard/tab=profile" element={<Dashboard />}></Route>
       </Routes>
       <FooterPage/>
     </BrowserRouter>
